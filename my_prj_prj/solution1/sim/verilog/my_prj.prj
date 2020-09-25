@@ -1,0 +1,10 @@
+sv work "glbl.v"
+sv xil_defaultlib "my_prj.autotb.v"
+sv xil_defaultlib "decision_function.v"
+sv xil_defaultlib "decision_function_1.v"
+sv xil_defaultlib "my_prj.v"
+sv xil_defaultlib "my_prj_mux_73_11_1_1.v"
+sv xil_defaultlib "my_prj_mux_154_32_1_1.v"
+sv xil_defaultlib "my_prj_mux_154_1_1_1.v"
+sv xil_defaultlib "my_prj_mux_83_11_1_1.v"
+

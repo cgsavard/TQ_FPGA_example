@@ -1,0 +1,1110 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep 23 16:55:42 2020
+# Process ID: 5525
+# Current directory: /nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: /nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: /nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/data41/software/Xilinx/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1409.613 ; gain = 0.000 ; free physical = 683 ; free virtual = 13431
+Command: synth_design -top bd_0_hls_inst_0 -part xcvu9p-flgc2104-1-e -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-1540] The version limit for your license is '2020.08' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xcvu9p-flgc2104-1-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5714 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2386.879 ; gain = 96.707 ; free physical = 281 ; free virtual = 12707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'my_prj' [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/my_prj.v:12]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/my_prj.v:555]
+INFO: [Synth 8-6157] synthesizing module 'decision_function_1' [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'decision_function' [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:10]
+INFO: [Synth 8-6157] synthesizing module 'my_prj_mux_73_11_1_1' [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/my_prj_mux_73_11_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'my_prj_mux_73_11_1_1' (1#1) [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/my_prj_mux_73_11_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'my_prj_mux_154_32_1_1' [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/my_prj_mux_154_32_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 32 - type: integer 
+	Parameter din9_WIDTH bound to: 32 - type: integer 
+	Parameter din10_WIDTH bound to: 32 - type: integer 
+	Parameter din11_WIDTH bound to: 32 - type: integer 
+	Parameter din12_WIDTH bound to: 32 - type: integer 
+	Parameter din13_WIDTH bound to: 32 - type: integer 
+	Parameter din14_WIDTH bound to: 32 - type: integer 
+	Parameter din15_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'my_prj_mux_154_32_1_1' (2#1) [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/my_prj_mux_154_32_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'my_prj_mux_154_1_1_1' [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/my_prj_mux_154_1_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 1 - type: integer 
+	Parameter din2_WIDTH bound to: 1 - type: integer 
+	Parameter din3_WIDTH bound to: 1 - type: integer 
+	Parameter din4_WIDTH bound to: 1 - type: integer 
+	Parameter din5_WIDTH bound to: 1 - type: integer 
+	Parameter din6_WIDTH bound to: 1 - type: integer 
+	Parameter din7_WIDTH bound to: 1 - type: integer 
+	Parameter din8_WIDTH bound to: 1 - type: integer 
+	Parameter din9_WIDTH bound to: 1 - type: integer 
+	Parameter din10_WIDTH bound to: 1 - type: integer 
+	Parameter din11_WIDTH bound to: 1 - type: integer 
+	Parameter din12_WIDTH bound to: 1 - type: integer 
+	Parameter din13_WIDTH bound to: 1 - type: integer 
+	Parameter din14_WIDTH bound to: 1 - type: integer 
+	Parameter din15_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'my_prj_mux_154_1_1_1' (3#1) [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/my_prj_mux_154_1_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'my_prj_mux_83_11_1_1' [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/my_prj_mux_83_11_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'my_prj_mux_83_11_1_1' (4#1) [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/my_prj_mux_83_11_1_1.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1358]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1360]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1362]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1364]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1366]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1368]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1370]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1372]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1374]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1376]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1378]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1380]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1382]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1384]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1386]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1410]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1520]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1522]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1524]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1526]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1528]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1530]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1532]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1534]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1536]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1572]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1600]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1604]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1606]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1608]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1610]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1612]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1616]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1618]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1620]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1622]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1624]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1626]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1628]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1630]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1632]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1634]
+INFO: [Synth 8-6155] done synthesizing module 'decision_function' (5#1) [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'decision_function_1' (6#1) [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'my_prj' (7#1) [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/my_prj.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (8#1) [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
+WARNING: [Synth 8-3331] design decision_function has unconnected port ap_rst
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[10]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[9]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[8]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[7]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[6]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[5]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[4]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[3]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[2]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[1]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2448.578 ; gain = 158.406 ; free physical = 384 ; free virtual = 12697
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2462.445 ; gain = 172.273 ; free physical = 377 ; free virtual = 12690
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2462.445 ; gain = 172.273 ; free physical = 377 ; free virtual = 12690
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/my_prj_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2992.629 ; gain = 23.750 ; free physical = 305 ; free virtual = 11781
+Finished Parsing XDC File [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/my_prj_ooc.xdc] for cell 'inst'
+Parsing XDC File [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2992.629 ; gain = 0.000 ; free physical = 303 ; free virtual = 11779
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3000.566 ; gain = 7.938 ; free physical = 300 ; free virtual = 11748
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 3000.570 ; gain = 710.398 ; free physical = 864 ; free virtual = 12313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu9p-flgc2104-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 3000.570 ; gain = 710.398 ; free physical = 864 ; free virtual = 12313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 3000.570 ; gain = 710.398 ; free physical = 864 ; free virtual = 12313
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_0_feature_read_int_reg_reg' and it is trimmed from '4' to '3' bits. [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1272]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_1_feature_read_int_reg_reg' and it is trimmed from '4' to '3' bits. [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1290]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_2_feature_read_int_reg_reg' and it is trimmed from '4' to '3' bits. [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1292]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_5_feature_read_int_reg_reg' and it is trimmed from '4' to '3' bits. [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1296]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_8_feature_read_int_reg_reg' and it is trimmed from '4' to '3' bits. [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1301]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_5_value_V_read_int_reg_reg' and it is trimmed from '3' to '2' bits. [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1298]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_10_parent_read_int_reg_reg' and it is trimmed from '5' to '4' bits. [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1276]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_11_parent_read_int_reg_reg' and it is trimmed from '5' to '4' bits. [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1279]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_parent_read_int_reg_reg' and it is trimmed from '5' to '4' bits. [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1283]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_13_parent_read_int_reg_reg' and it is trimmed from '5' to '4' bits. [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1286]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_14_parent_read_int_reg_reg' and it is trimmed from '5' to '4' bits. [/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.srcs/sources_1/bd/bd_0/ipshared/f5b1/hdl/verilog/decision_function.v:1288]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 3000.578 ; gain = 710.406 ; free physical = 867 ; free virtual = 12322
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |decision_function        |         100|      4459|
+|2     |decision_function_1__GC0 |           1|      8034|
+|3     |my_prj__GC0              |           1|        23|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     11 Bit       Adders := 6     
+	   3 Input     11 Bit       Adders := 8     
+	   7 Input     11 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 1     
+	  12 Input     11 Bit       Adders := 1     
+	  19 Input     11 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 100   
++---XORs : 
+	   2 Input      1 Bit         XORs := 2200  
++---Registers : 
+	               11 Bit    Registers := 948   
+	               10 Bit    Registers := 700   
+	                9 Bit    Registers := 100   
+	                8 Bit    Registers := 300   
+	                5 Bit    Registers := 2100  
+	                4 Bit    Registers := 1700  
+	                3 Bit    Registers := 600   
+	                2 Bit    Registers := 100   
+	                1 Bit    Registers := 2707  
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7000  
+	   2 Input     11 Bit        Muxes := 5701  
+	   2 Input      8 Bit        Muxes := 900   
+	   2 Input      5 Bit        Muxes := 700   
+	   4 Input      3 Bit        Muxes := 200   
+	   2 Input      3 Bit        Muxes := 400   
+	   2 Input      2 Bit        Muxes := 200   
+	   2 Input      1 Bit        Muxes := 16800 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module my_prj_mux_73_11_1_1__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 6     
+Module my_prj_mux_73_11_1_1__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 6     
+Module my_prj_mux_73_11_1_1__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 6     
+Module my_prj_mux_73_11_1_1__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 6     
+Module my_prj_mux_73_11_1_1__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 6     
+Module my_prj_mux_73_11_1_1__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 6     
+Module my_prj_mux_73_11_1_1__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 6     
+Module my_prj_mux_73_11_1_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 6     
+Module my_prj_mux_154_32_1_1__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+Module my_prj_mux_154_1_1_1__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 14    
+Module my_prj_mux_154_1_1_1__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 14    
+Module my_prj_mux_154_32_1_1__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+Module my_prj_mux_154_1_1_1__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 14    
+Module my_prj_mux_154_1_1_1__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 14    
+Module my_prj_mux_154_32_1_1__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+Module my_prj_mux_154_1_1_1__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 14    
+Module my_prj_mux_154_32_1_1__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+Module my_prj_mux_154_1_1_1__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 14    
+Module my_prj_mux_154_32_1_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+Module my_prj_mux_154_1_1_1__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 14    
+Module my_prj_mux_154_1_1_1__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 14    
+Module my_prj_mux_154_1_1_1__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 14    
+Module my_prj_mux_154_1_1_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 14    
+Module my_prj_mux_83_11_1_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 7     
+Module decision_function 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 22    
++---Registers : 
+	               11 Bit    Registers := 7     
+	               10 Bit    Registers := 7     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 21    
+	                4 Bit    Registers := 17    
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      5 Bit        Muxes := 7     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 28    
+Module decision_function_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     11 Bit       Adders := 6     
+	   3 Input     11 Bit       Adders := 8     
+	   7 Input     11 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 1     
+	  12 Input     11 Bit       Adders := 1     
+	  19 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 248   
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 101   
+Module my_prj 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[10]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[9]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[8]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[7]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[6]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[5]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[4]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[3]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[2]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[1]
+WARNING: [Synth 8-3331] design my_prj has unconnected port score_1_V[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_99_V_wr_reg_10343_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_99_V_wr_reg_10343_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_99_V_wr_reg_10343_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_99_V_wr_reg_10343_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_99_V_wr_reg_10343_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_99_V_wr_reg_10343_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_97_V_wr_reg_10331_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_97_V_wr_reg_10331_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_98_V_wr_reg_10337_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_98_V_wr_reg_10337_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_97_V_wr_reg_10331_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_97_V_wr_reg_10331_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_98_V_wr_reg_10337_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_98_V_wr_reg_10337_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_97_V_wr_reg_10331_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_97_V_wr_reg_10331_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_98_V_wr_reg_10337_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_98_V_wr_reg_10337_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_96_V_wr_reg_10325_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_96_V_wr_reg_10325_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_96_V_wr_reg_10325_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_96_V_wr_reg_10325_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_96_V_wr_reg_10325_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_96_V_wr_reg_10325_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_95_V_wr_reg_10319_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_95_V_wr_reg_10319_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_95_V_wr_reg_10319_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_95_V_wr_reg_10319_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_95_V_wr_reg_10319_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_95_V_wr_reg_10319_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_48_V_wr_reg_10283_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_48_V_wr_reg_10283_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_48_V_wr_reg_10283_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_48_V_wr_reg_10283_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_48_V_wr_reg_10283_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_48_V_wr_reg_10283_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_49_V_wr_reg_10289_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_49_V_wr_reg_10289_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_49_V_wr_reg_10289_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_49_V_wr_reg_10289_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_49_V_wr_reg_10289_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_49_V_wr_reg_10289_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_73_V_wr_reg_10295_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_73_V_wr_reg_10295_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_73_V_wr_reg_10295_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_73_V_wr_reg_10295_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_73_V_wr_reg_10295_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_73_V_wr_reg_10295_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_74_V_wr_reg_10301_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_74_V_wr_reg_10301_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_74_V_wr_reg_10301_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_74_V_wr_reg_10301_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_74_V_wr_reg_10301_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_74_V_wr_reg_10301_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_86_V_wr_reg_10307_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_86_V_wr_reg_10307_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_86_V_wr_reg_10307_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_86_V_wr_reg_10307_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_86_V_wr_reg_10307_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_86_V_wr_reg_10307_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_87_V_wr_reg_10313_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_87_V_wr_reg_10313_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_87_V_wr_reg_10313_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_87_V_wr_reg_10313_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_87_V_wr_reg_10313_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_87_V_wr_reg_10313_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_23_V_wr_reg_10271_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_23_V_wr_reg_10271_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_23_V_wr_reg_10271_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_23_V_wr_reg_10271_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_23_V_wr_reg_10271_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_23_V_wr_reg_10271_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_24_V_wr_reg_10277_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_24_V_wr_reg_10277_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_24_V_wr_reg_10277_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_24_V_wr_reg_10277_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_24_V_wr_reg_10277_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_24_V_wr_reg_10277_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_99_V_wr_reg_10343_pp0_iter4_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_99_V_wr_reg_10343_pp0_iter4_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_100_int_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_100_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_99_V_wr_reg_10343_pp0_iter4_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_99_V_wr_reg_10343_pp0_iter4_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_100_int_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_100_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_99_V_wr_reg_10343_pp0_iter4_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_99_V_wr_reg_10343_pp0_iter4_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_100_int_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_100_int_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_98_V_wr_reg_10337_pp0_iter4_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_98_V_wr_reg_10337_pp0_iter4_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_99_int_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_99_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_98_V_wr_reg_10337_pp0_iter4_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_98_V_wr_reg_10337_pp0_iter4_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_99_int_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_99_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_98_V_wr_reg_10337_pp0_iter4_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_98_V_wr_reg_10337_pp0_iter4_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_99_int_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_99_int_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_97_V_wr_reg_10331_pp0_iter4_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_97_V_wr_reg_10331_pp0_iter4_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_98_int_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_98_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_97_V_wr_reg_10331_pp0_iter4_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_97_V_wr_reg_10331_pp0_iter4_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_98_int_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_98_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_97_V_wr_reg_10331_pp0_iter4_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_97_V_wr_reg_10331_pp0_iter4_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_98_int_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_98_int_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_96_V_wr_reg_10325_pp0_iter4_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_96_V_wr_reg_10325_pp0_iter4_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_97_int_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_97_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_96_V_wr_reg_10325_pp0_iter4_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_96_V_wr_reg_10325_pp0_iter4_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_97_int_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_97_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_96_V_wr_reg_10325_pp0_iter4_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_96_V_wr_reg_10325_pp0_iter4_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_97_int_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_97_int_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_95_V_wr_reg_10319_pp0_iter4_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_95_V_wr_reg_10319_pp0_iter4_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_96_int_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_96_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_95_V_wr_reg_10319_pp0_iter4_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_95_V_wr_reg_10319_pp0_iter4_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_96_int_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_96_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_95_V_wr_reg_10319_pp0_iter4_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_95_V_wr_reg_10319_pp0_iter4_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_96_int_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_96_int_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_94_V_wr_reg_10783_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_94_V_wr_reg_10783_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_95_int_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_95_int_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_94_V_wr_reg_10783_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_94_V_wr_reg_10783_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_95_int_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_95_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_94_V_wr_reg_10783_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_94_V_wr_reg_10783_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_95_int_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_95_int_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_93_V_wr_reg_10778_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_93_V_wr_reg_10778_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_94_int_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_94_int_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_93_V_wr_reg_10778_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_93_V_wr_reg_10778_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_94_int_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_94_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_93_V_wr_reg_10778_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_93_V_wr_reg_10778_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_94_int_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_94_int_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_92_V_wr_reg_10773_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_92_V_wr_reg_10773_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_93_int_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_93_int_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_92_V_wr_reg_10773_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_92_V_wr_reg_10773_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_93_int_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_93_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_92_V_wr_reg_10773_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_92_V_wr_reg_10773_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_93_int_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_93_int_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_91_V_wr_reg_10768_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_91_V_wr_reg_10768_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_92_int_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_92_int_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_91_V_wr_reg_10768_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_91_V_wr_reg_10768_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_92_int_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_92_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_91_V_wr_reg_10768_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_91_V_wr_reg_10768_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_92_int_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_92_int_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_90_V_wr_reg_10763_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_90_V_wr_reg_10763_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_91_int_reg_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_91_int_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_90_V_wr_reg_10763_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_90_V_wr_reg_10763_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_91_int_reg_reg[8]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_91_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_90_V_wr_reg_10763_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_90_V_wr_reg_10763_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/ap_return_91_int_reg_reg[9]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/ap_return_91_int_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/grp_decision_function_1_fu_989i_1/tree_scores_89_V_wr_reg_10758_reg[7]' (FDE) to 'inst/grp_decision_function_1_fu_989i_1/tree_scores_89_V_wr_reg_10758_reg[8]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/grp_decision_function_1_fu_989i_1/ap_ce_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_478 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_478 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_478 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_478 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_478 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_478 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_478 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_564 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_564 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_564 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_564 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_564 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_564 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_564 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_650 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_650 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_650 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_650 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_650 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_650 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_650 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_736 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_736 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_736 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_736 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_736 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_736 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_736 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_822 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_822 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_822 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_822 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_822 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_822 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_822 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_908 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_10_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_908 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_908 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_908 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_908 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_908 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_908 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_994 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_994 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_994 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_994 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_994 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_994 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_994 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1080 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1080 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1080 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1080 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1080 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1080 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1080 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1166 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1166 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1166 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1166 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1166 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1166 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1166 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1252 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1252 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1252 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1252 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1252 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1252 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1252 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1338 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1338 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1338 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1338 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1338 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1338 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1338 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1424 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1424 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1424 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1424 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1424 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1424 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1424 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1510 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1510 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1510 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1510 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1510 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1510 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1510 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1596 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1596 /\Tree_3_ap_fixed_11_6_5_3_0_7_ap_fixed_11_6_5_3_0_ap_fixed_11_6_5_3_0_12_children_left_read_int_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1596 /\icmp_ln85_2_reg_2172_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1596 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1596 /\icmp_ln92_1_reg_2184_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1596 /\icmp_ln92_reg_2141_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_decision_function_1_fu_989/grp_decision_function_fu_1596 /\icmp_ln93_3_reg_2280_reg[0] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:59 . Memory (MB): peak = 3000.578 ; gain = 710.406 ; free physical = 702 ; free virtual = 12163
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |decision_function        |           1|       231|
+|2     |decision_function_1__GC0 |           1|      4172|
+|3     |my_prj__GC0              |           1|        14|
+|4     |decision_function__1     |           1|       247|
+|5     |decision_function__2     |           1|       264|
+|6     |decision_function__3     |           1|       247|
+|7     |decision_function__4     |           1|       175|
+|8     |decision_function__5     |           1|       170|
+|9     |decision_function__6     |           1|       203|
+|10    |decision_function__7     |           1|       228|
+|11    |decision_function__8     |           1|       251|
+|12    |decision_function__9     |           1|       173|
+|13    |decision_function__10    |           1|       211|
+|14    |decision_function__11    |           1|       202|
+|15    |decision_function__12    |           1|       181|
+|16    |decision_function__13    |           1|       213|
+|17    |decision_function__14    |           1|       209|
+|18    |decision_function__15    |           1|       212|
+|19    |decision_function__16    |           1|       211|
+|20    |decision_function__17    |           1|       207|
+|21    |decision_function__18    |           1|       241|
+|22    |decision_function__19    |           1|       178|
+|23    |decision_function__20    |           1|       241|
+|24    |decision_function__21    |           1|       212|
+|25    |decision_function__22    |           1|       201|
+|26    |decision_function__23    |           1|       257|
+|27    |decision_function__24    |           1|       223|
+|28    |decision_function__25    |           1|       226|
+|29    |decision_function__26    |           1|       234|
+|30    |decision_function__27    |           1|       238|
+|31    |decision_function__28    |           1|       208|
+|32    |decision_function__29    |           1|       233|
+|33    |decision_function__30    |           1|       240|
+|34    |decision_function__31    |           1|       260|
+|35    |decision_function__32    |           1|       262|
+|36    |decision_function__33    |           1|       208|
+|37    |decision_function__34    |           1|       234|
+|38    |decision_function__35    |           1|       228|
+|39    |decision_function__36    |           1|       226|
+|40    |decision_function__37    |           1|       207|
+|41    |decision_function__38    |           1|       251|
+|42    |decision_function__39    |           1|       244|
+|43    |decision_function__40    |           1|       244|
+|44    |decision_function__41    |           1|       272|
+|45    |decision_function__42    |           1|       261|
+|46    |decision_function__43    |           1|       264|
+|47    |decision_function__44    |           1|       241|
+|48    |decision_function__45    |           1|       264|
+|49    |decision_function__46    |           1|       227|
+|50    |decision_function__47    |           1|       209|
+|51    |decision_function__48    |           1|       220|
+|52    |decision_function__49    |           1|       238|
+|53    |decision_function__50    |           1|       230|
+|54    |decision_function__51    |           1|       257|
+|55    |decision_function__52    |           1|       219|
+|56    |decision_function__53    |           1|       263|
+|57    |decision_function__54    |           1|       222|
+|58    |decision_function__55    |           1|       213|
+|59    |decision_function__56    |           1|       214|
+|60    |decision_function__57    |           1|       196|
+|61    |decision_function__58    |           1|       201|
+|62    |decision_function__59    |           1|       229|
+|63    |decision_function__60    |           1|       218|
+|64    |decision_function__61    |           1|       213|
+|65    |decision_function__62    |           1|       180|
+|66    |decision_function__63    |           1|       264|
+|67    |decision_function__64    |           1|       238|
+|68    |decision_function__65    |           1|       233|
+|69    |decision_function__66    |           1|       206|
+|70    |decision_function__67    |           1|       271|
+|71    |decision_function__68    |           1|       262|
+|72    |decision_function__69    |           1|       234|
+|73    |decision_function__70    |           1|       232|
+|74    |decision_function__71    |           1|       236|
+|75    |decision_function__72    |           1|       246|
+|76    |decision_function__73    |           1|       237|
+|77    |decision_function__74    |           1|       203|
+|78    |decision_function__75    |           1|       257|
+|79    |decision_function__76    |           1|       262|
+|80    |decision_function__77    |           1|       214|
+|81    |decision_function__78    |           1|       154|
+|82    |decision_function__79    |           1|       229|
+|83    |decision_function__80    |           1|       193|
+|84    |decision_function__81    |           1|       260|
+|85    |decision_function__82    |           1|       223|
+|86    |decision_function__83    |           1|       240|
+|87    |decision_function__84    |           1|       232|
+|88    |decision_function__85    |           1|       207|
+|89    |decision_function__86    |           1|       213|
+|90    |decision_function__87    |           1|       232|
+|91    |decision_function__88    |           1|       231|
+|92    |decision_function__89    |           1|       207|
+|93    |decision_function__90    |           1|       195|
+|94    |decision_function__91    |           1|       258|
+|95    |decision_function__92    |           1|       206|
+|96    |decision_function__93    |           1|       239|
+|97    |decision_function__94    |           1|       205|
+|98    |decision_function__95    |           1|       223|
+|99    |decision_function__96    |           1|       185|
+|100   |decision_function__97    |           1|       172|
+|101   |decision_function__98    |           1|       217|
+|102   |decision_function__99    |           1|       252|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:02:10 . Memory (MB): peak = 3054.438 ; gain = 764.266 ; free physical = 696 ; free virtual = 12088
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:02:14 . Memory (MB): peak = 3092.453 ; gain = 802.281 ; free physical = 547 ; free virtual = 11939
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |decision_function        |           1|       231|
+|2     |decision_function_1__GC0 |           1|      4172|
+|3     |my_prj__GC0              |           1|        14|
+|4     |decision_function__1     |           1|       247|
+|5     |decision_function__2     |           1|       264|
+|6     |decision_function__3     |           1|       247|
+|7     |decision_function__4     |           1|       175|
+|8     |decision_function__5     |           1|       170|
+|9     |decision_function__6     |           1|       203|
+|10    |decision_function__7     |           1|       228|
+|11    |decision_function__8     |           1|       251|
+|12    |decision_function__9     |           1|       173|
+|13    |decision_function__10    |           1|       211|
+|14    |decision_function__11    |           1|       202|
+|15    |decision_function__12    |           1|       181|
+|16    |decision_function__13    |           1|       213|
+|17    |decision_function__14    |           1|       209|
+|18    |decision_function__15    |           1|       212|
+|19    |decision_function__16    |           1|       211|
+|20    |decision_function__17    |           1|       207|
+|21    |decision_function__18    |           1|       241|
+|22    |decision_function__19    |           1|       178|
+|23    |decision_function__20    |           1|       241|
+|24    |decision_function__21    |           1|       212|
+|25    |decision_function__22    |           1|       201|
+|26    |decision_function__23    |           1|       257|
+|27    |decision_function__24    |           1|       223|
+|28    |decision_function__25    |           1|       226|
+|29    |decision_function__26    |           1|       234|
+|30    |decision_function__27    |           1|       238|
+|31    |decision_function__28    |           1|       208|
+|32    |decision_function__29    |           1|       233|
+|33    |decision_function__30    |           1|       240|
+|34    |decision_function__31    |           1|       260|
+|35    |decision_function__32    |           1|       262|
+|36    |decision_function__33    |           1|       208|
+|37    |decision_function__34    |           1|       234|
+|38    |decision_function__35    |           1|       228|
+|39    |decision_function__36    |           1|       226|
+|40    |decision_function__37    |           1|       207|
+|41    |decision_function__38    |           1|       251|
+|42    |decision_function__39    |           1|       244|
+|43    |decision_function__40    |           1|       244|
+|44    |decision_function__41    |           1|       272|
+|45    |decision_function__42    |           1|       261|
+|46    |decision_function__43    |           1|       264|
+|47    |decision_function__44    |           1|       241|
+|48    |decision_function__45    |           1|       264|
+|49    |decision_function__46    |           1|       227|
+|50    |decision_function__47    |           1|       209|
+|51    |decision_function__48    |           1|       220|
+|52    |decision_function__49    |           1|       238|
+|53    |decision_function__50    |           1|       230|
+|54    |decision_function__51    |           1|       257|
+|55    |decision_function__52    |           1|       219|
+|56    |decision_function__53    |           1|       263|
+|57    |decision_function__54    |           1|       222|
+|58    |decision_function__55    |           1|       213|
+|59    |decision_function__56    |           1|       214|
+|60    |decision_function__57    |           1|       196|
+|61    |decision_function__58    |           1|       201|
+|62    |decision_function__59    |           1|       229|
+|63    |decision_function__60    |           1|       218|
+|64    |decision_function__61    |           1|       213|
+|65    |decision_function__62    |           1|       180|
+|66    |decision_function__63    |           1|       264|
+|67    |decision_function__64    |           1|       238|
+|68    |decision_function__65    |           1|       233|
+|69    |decision_function__66    |           1|       206|
+|70    |decision_function__67    |           1|       271|
+|71    |decision_function__68    |           1|       262|
+|72    |decision_function__69    |           1|       234|
+|73    |decision_function__70    |           1|       232|
+|74    |decision_function__71    |           1|       236|
+|75    |decision_function__72    |           1|       246|
+|76    |decision_function__73    |           1|       237|
+|77    |decision_function__74    |           1|       203|
+|78    |decision_function__75    |           1|       257|
+|79    |decision_function__76    |           1|       262|
+|80    |decision_function__77    |           1|       214|
+|81    |decision_function__78    |           1|       154|
+|82    |decision_function__79    |           1|       229|
+|83    |decision_function__80    |           1|       193|
+|84    |decision_function__81    |           1|       260|
+|85    |decision_function__82    |           1|       223|
+|86    |decision_function__83    |           1|       240|
+|87    |decision_function__84    |           1|       232|
+|88    |decision_function__85    |           1|       207|
+|89    |decision_function__86    |           1|       213|
+|90    |decision_function__87    |           1|       232|
+|91    |decision_function__88    |           1|       231|
+|92    |decision_function__89    |           1|       207|
+|93    |decision_function__90    |           1|       195|
+|94    |decision_function__91    |           1|       258|
+|95    |decision_function__92    |           1|       206|
+|96    |decision_function__93    |           1|       239|
+|97    |decision_function__94    |           1|       205|
+|98    |decision_function__95    |           1|       223|
+|99    |decision_function__96    |           1|       185|
+|100   |decision_function__97    |           1|       172|
+|101   |decision_function__98    |           1|       217|
+|102   |decision_function__99    |           1|       252|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:02:22 . Memory (MB): peak = 3103.547 ; gain = 813.375 ; free physical = 544 ; free virtual = 11936
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:02:24 . Memory (MB): peak = 3111.488 ; gain = 821.316 ; free physical = 654 ; free virtual = 12046
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:02:24 . Memory (MB): peak = 3111.488 ; gain = 821.316 ; free physical = 655 ; free virtual = 12046
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:02:25 . Memory (MB): peak = 3111.488 ; gain = 821.316 ; free physical = 656 ; free virtual = 12047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:02:25 . Memory (MB): peak = 3111.488 ; gain = 821.316 ; free physical = 656 ; free virtual = 12047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:02:25 . Memory (MB): peak = 3111.488 ; gain = 821.316 ; free physical = 656 ; free virtual = 12047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:20 ; elapsed = 00:02:25 . Memory (MB): peak = 3111.488 ; gain = 821.316 ; free physical = 656 ; free virtual = 12047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |   789|
+|2     |LUT1   |   697|
+|3     |LUT2   |  5585|
+|4     |LUT3   |  1383|
+|5     |LUT4   |   258|
+|6     |LUT5   |   436|
+|7     |LUT6   |   301|
+|8     |FDRE   |  2376|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------------------+---------------------+------+
+|      |Instance                            |Module               |Cells |
++------+------------------------------------+---------------------+------+
+|1     |top                                 |                     | 11825|
+|2     |  inst                              |my_prj               | 11825|
+|3     |    grp_decision_function_1_fu_989  |decision_function_1  | 11773|
+|4     |      grp_decision_function_fu_1080 |decision_function    |    73|
+|5     |      grp_decision_function_fu_1166 |decision_function_0  |    73|
+|6     |      grp_decision_function_fu_1252 |decision_function_2  |    64|
+|7     |      grp_decision_function_fu_1338 |decision_function_3  |    84|
+|8     |      grp_decision_function_fu_1424 |decision_function_4  |   110|
+|9     |      grp_decision_function_fu_1510 |decision_function_5  |    72|
+|10    |      grp_decision_function_fu_1596 |decision_function_6  |  1700|
+|11    |      grp_decision_function_fu_1675 |decision_function_7  |    45|
+|12    |      grp_decision_function_fu_1754 |decision_function_8  |   822|
+|13    |      grp_decision_function_fu_1833 |decision_function_9  |   466|
+|14    |      grp_decision_function_fu_1912 |decision_function_10 |    42|
+|15    |      grp_decision_function_fu_1991 |decision_function_11 |   678|
+|16    |      grp_decision_function_fu_2070 |decision_function_12 |    45|
+|17    |      grp_decision_function_fu_2149 |decision_function_13 |   890|
+|18    |      grp_decision_function_fu_2228 |decision_function_14 |    41|
+|19    |      grp_decision_function_fu_2307 |decision_function_15 |    63|
+|20    |      grp_decision_function_fu_2386 |decision_function_16 |   102|
+|21    |      grp_decision_function_fu_2465 |decision_function_17 |    39|
+|22    |      grp_decision_function_fu_2544 |decision_function_18 |    38|
+|23    |      grp_decision_function_fu_2623 |decision_function_19 |    38|
+|24    |      grp_decision_function_fu_2702 |decision_function_20 |    54|
+|25    |      grp_decision_function_fu_2781 |decision_function_21 |    75|
+|26    |      grp_decision_function_fu_2860 |decision_function_22 |   214|
+|27    |      grp_decision_function_fu_2939 |decision_function_23 |    52|
+|28    |      grp_decision_function_fu_3018 |decision_function_24 |    49|
+|29    |      grp_decision_function_fu_3097 |decision_function_25 |    92|
+|30    |      grp_decision_function_fu_3176 |decision_function_26 |    58|
+|31    |      grp_decision_function_fu_3255 |decision_function_27 |    49|
+|32    |      grp_decision_function_fu_3334 |decision_function_28 |    92|
+|33    |      grp_decision_function_fu_3413 |decision_function_29 |   156|
+|34    |      grp_decision_function_fu_3492 |decision_function_30 |    45|
+|35    |      grp_decision_function_fu_3571 |decision_function_31 |    52|
+|36    |      grp_decision_function_fu_3650 |decision_function_32 |    49|
+|37    |      grp_decision_function_fu_3729 |decision_function_33 |    52|
+|38    |      grp_decision_function_fu_3808 |decision_function_34 |    42|
+|39    |      grp_decision_function_fu_3887 |decision_function_35 |    79|
+|40    |      grp_decision_function_fu_3966 |decision_function_36 |    44|
+|41    |      grp_decision_function_fu_4045 |decision_function_37 |    40|
+|42    |      grp_decision_function_fu_4124 |decision_function_38 |    66|
+|43    |      grp_decision_function_fu_4203 |decision_function_39 |    42|
+|44    |      grp_decision_function_fu_4282 |decision_function_40 |    38|
+|45    |      grp_decision_function_fu_4361 |decision_function_41 |    62|
+|46    |      grp_decision_function_fu_4440 |decision_function_42 |   379|
+|47    |      grp_decision_function_fu_4519 |decision_function_43 |    51|
+|48    |      grp_decision_function_fu_4598 |decision_function_44 |    41|
+|49    |      grp_decision_function_fu_4677 |decision_function_45 |    37|
+|50    |      grp_decision_function_fu_4756 |decision_function_46 |    52|
+|51    |      grp_decision_function_fu_478  |decision_function_47 |   183|
+|52    |      grp_decision_function_fu_4835 |decision_function_48 |    49|
+|53    |      grp_decision_function_fu_4914 |decision_function_49 |    46|
+|54    |      grp_decision_function_fu_4993 |decision_function_50 |    66|
+|55    |      grp_decision_function_fu_5072 |decision_function_51 |    52|
+|56    |      grp_decision_function_fu_5151 |decision_function_52 |    47|
+|57    |      grp_decision_function_fu_5230 |decision_function_53 |    38|
+|58    |      grp_decision_function_fu_5309 |decision_function_54 |   155|
+|59    |      grp_decision_function_fu_5388 |decision_function_55 |   137|
+|60    |      grp_decision_function_fu_5467 |decision_function_56 |    41|
+|61    |      grp_decision_function_fu_5546 |decision_function_57 |    38|
+|62    |      grp_decision_function_fu_5625 |decision_function_58 |    52|
+|63    |      grp_decision_function_fu_564  |decision_function_59 |   143|
+|64    |      grp_decision_function_fu_5704 |decision_function_60 |    60|
+|65    |      grp_decision_function_fu_5783 |decision_function_61 |    46|
+|66    |      grp_decision_function_fu_5862 |decision_function_62 |    40|
+|67    |      grp_decision_function_fu_5941 |decision_function_63 |    85|
+|68    |      grp_decision_function_fu_6020 |decision_function_64 |    40|
+|69    |      grp_decision_function_fu_6099 |decision_function_65 |    38|
+|70    |      grp_decision_function_fu_6178 |decision_function_66 |    38|
+|71    |      grp_decision_function_fu_6257 |decision_function_67 |    53|
+|72    |      grp_decision_function_fu_6336 |decision_function_68 |    52|
+|73    |      grp_decision_function_fu_6415 |decision_function_69 |    41|
+|74    |      grp_decision_function_fu_6494 |decision_function_70 |    37|
+|75    |      grp_decision_function_fu_650  |decision_function_71 |    86|
+|76    |      grp_decision_function_fu_6573 |decision_function_72 |    53|
+|77    |      grp_decision_function_fu_6652 |decision_function_73 |    51|
+|78    |      grp_decision_function_fu_6731 |decision_function_74 |    43|
+|79    |      grp_decision_function_fu_6810 |decision_function_75 |    62|
+|80    |      grp_decision_function_fu_6889 |decision_function_76 |    52|
+|81    |      grp_decision_function_fu_6968 |decision_function_77 |    68|
+|82    |      grp_decision_function_fu_7047 |decision_function_78 |    43|
+|83    |      grp_decision_function_fu_7126 |decision_function_79 |    45|
+|84    |      grp_decision_function_fu_7205 |decision_function_80 |    46|
+|85    |      grp_decision_function_fu_7284 |decision_function_81 |    63|
+|86    |      grp_decision_function_fu_736  |decision_function_82 |    81|
+|87    |      grp_decision_function_fu_7363 |decision_function_83 |    41|
+|88    |      grp_decision_function_fu_7442 |decision_function_84 |    35|
+|89    |      grp_decision_function_fu_7521 |decision_function_85 |    49|
+|90    |      grp_decision_function_fu_7600 |decision_function_86 |    48|
+|91    |      grp_decision_function_fu_7679 |decision_function_87 |    57|
+|92    |      grp_decision_function_fu_7758 |decision_function_88 |    50|
+|93    |      grp_decision_function_fu_7837 |decision_function_89 |    47|
+|94    |      grp_decision_function_fu_7916 |decision_function_90 |    45|
+|95    |      grp_decision_function_fu_7995 |decision_function_91 |    45|
+|96    |      grp_decision_function_fu_8074 |decision_function_92 |    48|
+|97    |      grp_decision_function_fu_8153 |decision_function_93 |    50|
+|98    |      grp_decision_function_fu_822  |decision_function_94 |    90|
+|99    |      grp_decision_function_fu_8232 |decision_function_95 |    61|
+|100   |      grp_decision_function_fu_8311 |decision_function_96 |    41|
+|101   |      grp_decision_function_fu_8390 |decision_function_97 |    63|
+|102   |      grp_decision_function_fu_908  |decision_function_98 |    92|
+|103   |      grp_decision_function_fu_994  |decision_function_99 |   108|
++------+------------------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:20 ; elapsed = 00:02:25 . Memory (MB): peak = 3111.488 ; gain = 821.316 ; free physical = 656 ; free virtual = 12047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:58 . Memory (MB): peak = 3111.488 ; gain = 283.191 ; free physical = 685 ; free virtual = 12077
+Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:02:25 . Memory (MB): peak = 3111.492 ; gain = 821.316 ; free physical = 699 ; free virtual = 12091
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 789 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3145.211 ; gain = 0.000 ; free physical = 616 ; free virtual = 12009
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+235 Infos, 76 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:03:02 . Memory (MB): peak = 3145.211 ; gain = 1735.598 ; free physical = 718 ; free virtual = 12113
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3145.211 ; gain = 0.000 ; free physical = 716 ; free virtual = 12112
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = b28962433400697f
+INFO: [Coretcl 2-1174] Renamed 102 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3151.227 ; gain = 0.000 ; free physical = 589 ; free virtual = 12000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 23 16:59:14 2020...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep 23 16:54:41 2020
+# Process ID: 4577
+# Current directory: /nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/ip/vivado.log
+# Journal file: /nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

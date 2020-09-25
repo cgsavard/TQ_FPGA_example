@@ -1,0 +1,34 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /nfs/data41/software/Xilinx/Vivado/2019.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/nfs/data41/software/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'csavard' on host 'torreys.colorado.edu' (Linux_x86_64 version 3.10.0-957.1.3.el7.x86_64) on Wed Sep 23 16:48:49 MDT 2020
+INFO: [HLS 200-10] On os "CentOS Linux release 7.7.1908 (Core)"
+INFO: [HLS 200-10] In directory '/nfs/data41/csavard/CS_conifer/conifer/11_6_opt'
+Sourcing Tcl script 'build_prj.tcl'
+INFO: [HLS 200-10] Creating and opening project '/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj'.
+INFO: [HLS 200-10] Adding design file 'firmware/BDT.h' to the project
+INFO: [HLS 200-10] Adding design file 'firmware/my_prj.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'my_prj_test.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'tb_data' to the project
+INFO: [HLS 200-10] Creating and opening solution '/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1'.
+INFO: [HLS 200-10] Opening and resetting solution '/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.17ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../my_prj_test.cpp in debug mode
+   Compiling ../../../../firmware/my_prj.cpp in debug mode
+   Generating csim.exe
+Processing input 0
+Quantized predictions
+-0.96875 0 
+INFO: Saved inference results to file: tb_data/csim_results.log
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [Common 17-206] Exiting vivado_hls at Wed Sep 23 16:48:59 2020...

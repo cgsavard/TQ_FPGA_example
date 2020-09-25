@@ -1,0 +1,5 @@
+   Build using "/nfs/data41/software/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_my_prj.cpp
+   Compiling my_prj.cpp_pre.cpp.tb.cpp
+   Compiling my_prj_test.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

@@ -1,0 +1,181 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-10] Opening and resetting solution '/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.17ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+INFO: [HLS 200-10] Opening and resetting solution '/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4.17ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'firmware/my_prj.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 871.379 ; gain = 192.000 ; free physical = 3116 ; free virtual = 14651
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 871.379 ; gain = 192.000 ; free physical = 3116 ; free virtual = 14651
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 871.379 ; gain = 192.000 ; free physical = 3078 ; free virtual = 14615
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'BDT::fn_classes' into 'BDT::BDT<100, 3, 2, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' (firmware/BDT.h:120) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 871.379 ; gain = 192.000 ; free physical = 3078 ; free virtual = 14615
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'BDT::BDT<100, 3, 2, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' (firmware/BDT.h:117).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'BDT::Tree<3, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' (firmware/BDT.h:38).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (firmware/BDT.h:120) in function 'BDT::BDT<100, 3, 2, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Trees' (firmware/BDT.h:124) in function 'BDT::BDT<100, 3, 2, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 100.
+INFO: [HLS 200-489] Unrolling loop 'Classes' (firmware/BDT.h:126) in function 'BDT::BDT<100, 3, 2, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (firmware/BDT.h:132) in function 'BDT::BDT<100, 3, 2, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Compare' (firmware/BDT.h:66) in function 'BDT::Tree<3, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Activate' (firmware/BDT.h:78) in function 'BDT::Tree<3, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 15.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (firmware/BDT.h:100) in function 'BDT::Tree<3, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 8.
+INFO: [XFORM 203-101] Partitioning array 'x.V' (firmware/my_prj.cpp:4) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'score.V' (firmware/my_prj.cpp:4) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.feature'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.threshold.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.value.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.children_left'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.children_right'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.parent'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tree_scores.V' (firmware/my_prj.cpp:4) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'comparison' (firmware/BDT.h:55) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'activation' (firmware/BDT.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'activation_leaf' (firmware/BDT.h:57) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'value_leaf.V' (firmware/BDT.h:58) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.feature'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.threshold.V'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.value.V'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.children_left'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.children_right'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.parent'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.feature'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.threshold.V'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.value.V'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.children_left'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.children_right'  in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'bdt.trees.parent'  in dimension 3 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (firmware/BDT.h:106:2) in function 'BDT::Tree<3, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function'... converting 327 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'BDT::BDT<100, 3, 2, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' (firmware/BDT.h:117)...100 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1111.391 ; gain = 432.012 ; free physical = 2818 ; free virtual = 14357
+WARNING: [XFORM 203-631] Renaming function 'BDT::Tree<3, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' to 'decision_function' (firmware/BDT.h:38)
+WARNING: [XFORM 203-631] Renaming function 'BDT::BDT<100, 3, 2, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> [7], ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' to 'decision_function.1' (firmware/BDT.h:127:2)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 1111.391 ; gain = 432.012 ; free physical = 2816 ; free virtual = 14355
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'my_prj' ...
+WARNING: [SYN 201-103] Legalizing function name 'decision_function.1' to 'decision_function_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 41.89 seconds; current allocated memory: 180.146 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 181.357 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.85 seconds; current allocated memory: 182.804 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 5.73 seconds; current allocated memory: 196.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'my_prj' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'my_prj'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 16.25 seconds; current allocated memory: 210.114 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 5.31 seconds; current allocated memory: 215.486 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'my_prj_mux_154_1_1_1': 10 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'my_prj_mux_154_32_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'my_prj_mux_73_11_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'my_prj_mux_83_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function'.
+INFO: [HLS 200-111]  Elapsed time: 16.19 seconds; current allocated memory: 231.481 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_1'.
+INFO: [HLS 200-111]  Elapsed time: 13.41 seconds; current allocated memory: 274.759 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'my_prj' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_0_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_1_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_2_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_3_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_4_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_5_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_6_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/score_0_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/score_1_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_0_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_1_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_2_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_3_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_4_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_5_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_6_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_7_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_8_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_9_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_10_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_11_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_12_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_13_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_14_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_15_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_16_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_17_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_18_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_19_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_20_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_21_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_22_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_23_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_24_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_25_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_26_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_27_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_28_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_29_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_30_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_31_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_32_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_33_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_34_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_35_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_36_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/tree_scores_37_V' to 'ap_vld'.

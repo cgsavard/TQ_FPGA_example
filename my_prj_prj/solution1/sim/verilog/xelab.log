@@ -1,0 +1,38 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/nfs/data41/software/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /nfs/data41/software/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_my_prj_top glbl -prj my_prj.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /nfs/data41/software/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s my_prj -debug wave 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/sim/verilog/my_prj.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_my_prj_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/sim/verilog/decision_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decision_function
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/sim/verilog/decision_function_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decision_function_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/sim/verilog/my_prj.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/sim/verilog/my_prj_mux_73_11_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_prj_mux_73_11_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/sim/verilog/my_prj_mux_154_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_prj_mux_154_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/sim/verilog/my_prj_mux_154_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_prj_mux_154_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/nfs/data41/csavard/CS_conifer/conifer/11_6_opt/my_prj_prj/solution1/sim/verilog/my_prj_mux_83_11_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_prj_mux_83_11_1_1
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.my_prj_mux_73_11_1_1(ID=1,din0_W...
+Compiling module xil_defaultlib.my_prj_mux_154_32_1_1(ID=1,din15...
+Compiling module xil_defaultlib.my_prj_mux_154_1_1_1(ID=1,din0_W...
+Compiling module xil_defaultlib.my_prj_mux_83_11_1_1(ID=1,din0_W...
+Compiling module xil_defaultlib.decision_function
+Compiling module xil_defaultlib.decision_function_1
+Compiling module xil_defaultlib.my_prj
+Compiling module xil_defaultlib.apatb_my_prj_top
+Compiling module work.glbl
+Built simulation snapshot my_prj
